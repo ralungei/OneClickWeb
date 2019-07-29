@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webERMDD xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="258a5ab2-dfa2-446b-b6df-8c4e96fe817a" xmlns="http://schemas.microsoft.com/dsltools/RAARMAPMCWeberMDD">
+  <elements>
+    <entidad Id="ee4ac2e4-2d63-4cf9-8803-24c2afb50eab" nombre="Entidad1">
+      <atributoEnt>
+        <entidadHasAtributoEnt Id="bf0f1535-30bf-4c35-ae73-b99e91e9134b">
+          <atributoEnt Id="5766ae0c-4315-4b9d-8af3-3ef3fc415724" nulo="false" />
+        </entidadHasAtributoEnt>
+      </atributoEnt>
+      <clavePrimaria>
+        <entidadHasClavePrimaria Id="fa8d68f4-2bc1-4808-a81b-aeb5768adaa2">
+          <clavePrimaria Id="da929a84-f13c-40bc-9694-eeb008fc00ac" />
+        </entidadHasClavePrimaria>
+      </clavePrimaria>
+    </entidad>
+    <entidad Id="e0b13410-63da-4a8b-9694-30d344d186b3" nombre="Entidad2">
+      <atributoEnt>
+        <entidadHasAtributoEnt Id="ecd31429-b530-46f9-8221-50598cb5c2bd">
+          <atributoEnt Id="ab37c6b7-9d73-4671-8774-1e62f55fa242" nulo="false" />
+        </entidadHasAtributoEnt>
+      </atributoEnt>
+      <clavePrimaria>
+        <entidadHasClavePrimaria Id="782ef919-74be-4022-804c-e008a0c1ed7c">
+          <clavePrimaria Id="1db827e9-0094-4cc2-888a-b2d08b08f323" />
+        </entidadHasClavePrimaria>
+      </clavePrimaria>
+    </entidad>
+  </elements>
+  <relacion>
+    <webERMDDHasRelacion Id="0398d631-e777-4639-83e2-cefe5b3fea78">
+      <relacion Id="7e0cd703-8c38-4c4b-ba77-4182804aa375">
+        <atributoRel>
+          <relacionReferencesAtributoRel Id="5dcfeb97-5273-45db-a325-6e262b5badde">
+            <atributoRelMoniker Id="322aa238-24a6-4664-b319-15f4eadc270d" />
+          </relacionReferencesAtributoRel>
+        </atributoRel>
+        <entidadIzq>
+          <relacionReferencesEntidadIzq Id="f59a8736-7575-4cb8-91a2-3e00555c74e5">
+            <entidadMoniker nombre="/258a5ab2-dfa2-446b-b6df-8c4e96fe817a/Entidad1" />
+          </relacionReferencesEntidadIzq>
+        </entidadIzq>
+        <entidadDer>
+          <relacionReferencesEntidadDer Id="8269256a-b9a2-423e-92dd-c05ab56aa8bb">
+            <entidadMoniker nombre="/258a5ab2-dfa2-446b-b6df-8c4e96fe817a/Entidad2" />
+          </relacionReferencesEntidadDer>
+        </entidadDer>
+      </relacion>
+    </webERMDDHasRelacion>
+  </relacion>
+  <atributoRel>
+    <webERMDDHasAtributoRel Id="650b7d8b-1cf6-47fa-b59c-8302103e741b">
+      <atributoRel Id="322aa238-24a6-4664-b319-15f4eadc270d" nulo="false" />
+    </webERMDDHasAtributoRel>
+  </atributoRel>
+</webERMDD>

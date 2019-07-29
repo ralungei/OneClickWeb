@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webERMDD xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6f79b8aa-c9ad-4732-8bfb-26935880d3aa" nombre="Gestion" xmlns="http://schemas.microsoft.com/dsltools/RAARMAPMCWeberMDD">
+  <elements>
+    <entidad Id="e727c35f-ed22-4c32-ba37-3ab8bb079c9d" nombre="Cliente">
+      <atributoEnt>
+        <entidadHasAtributoEnt Id="4e9f44d3-1570-4593-9832-5d3e70e1d1a4">
+          <atributoEnt Id="d0acb3d8-b8c5-4435-ac81-bf52fd1bd84c" nombre="nombre" tipo="CHAR(20)" nulo="true" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="08ebba8d-5e36-4281-9e59-e2ba32c05daa">
+          <atributoEnt Id="be676e20-a4bb-4c22-aba9-727bfa3defad" nombre="apellidos" tipo="CHAR(20)" nulo="true" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="bfe81498-6c02-497c-a263-9a48b667f1c0">
+          <atributoEnt Id="282f02c5-04b2-4acc-9f56-5d910bcce959" nombre="fechaNac" tipo="DATE" nulo="false" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="8d023393-faf8-4932-8a46-62aa1b94b11f">
+          <atributoEnt Id="0cab9833-abb1-4275-bf56-4df84e18c349" nombre="direccion" tipo="CHAR(20)" nulo="false" />
+        </entidadHasAtributoEnt>
+      </atributoEnt>
+      <clavePrimaria>
+        <entidadHasClavePrimaria Id="97bf6416-8ce1-4cfb-9427-6c1643518d83">
+          <clavePrimaria Id="6268a0ff-5751-4b9c-9151-f96e2c086590" nombre="DNI" tipo="INTEGER" />
+        </entidadHasClavePrimaria>
+      </clavePrimaria>
+    </entidad>
+    <entidad Id="e58d7543-59f4-47eb-b723-42c0750e315f" nombre="Trayecto">
+      <atributoEnt>
+        <entidadHasAtributoEnt Id="f6a872a9-d981-4b1e-9fd0-0b13ddd9b832">
+          <atributoEnt Id="a668fff9-d830-430e-9689-1df50eebe0fc" nombre="coordOrigen" tipo="INTEGER" nulo="true" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="f19cbd51-cf84-40f6-b884-fda5c3b65863">
+          <atributoEnt Id="18382732-4e9f-4ccd-9dfe-c54ed16308ed" nombre="coordDestino" tipo="INTEGER" nulo="true" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="d3f760bd-5655-46e3-9be5-32e087e55986">
+          <atributoEnt Id="607a064f-5457-4ca8-af5a-1a741b564e99" nombre="direccionOrigen" tipo="CHAR(20)" nulo="false" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="7b5c0283-a459-431e-8258-4cd241e1632a">
+          <atributoEnt Id="222ebb33-4d56-4f48-9b47-44f457053186" nombre="direccionDestino" tipo="CHAR(20)" nulo="false" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="5fa470ff-b168-4521-b291-a8b53c7eb979">
+          <atributoEnt Id="17f7aca8-7783-4a82-bc89-e51d8a638025" nombre="kmsRecorridos" tipo="INTEGER" nulo="false" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="25252309-15b5-4020-a376-2a12ba607dc3">
+          <atributoEnt Id="2835396b-cb9d-425e-b633-93a317b31529" nombre="fechaOrigen" tipo="DATE" nulo="false" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="a0673b54-79e4-4c2a-9a56-0369177994b1">
+          <atributoEnt Id="9d20a2dd-1994-414f-81a4-56c5c27a8838" nombre="fechaDestino" tipo="DATE" nulo="false" />
+        </entidadHasAtributoEnt>
+      </atributoEnt>
+      <clavePrimaria>
+        <entidadHasClavePrimaria Id="80cf9881-dfb4-4a86-9bb6-02cd14d36e32">
+          <clavePrimaria Id="6a5d0a95-650e-4c98-88cb-e3e65ec130b4" nombre="codT" tipo="INTEGER" />
+        </entidadHasClavePrimaria>
+      </clavePrimaria>
+    </entidad>
+    <entidad Id="76238b42-e0c6-4f68-820d-a5bb921025b1" nombre="Dron">
+      <atributoEnt>
+        <entidadHasAtributoEnt Id="2c3b7e23-0f12-4a02-bb41-ee97a7fa5c9f">
+          <atributoEnt Id="f600e888-387c-41ce-8106-93ea8578c77e" nombre="modelo" tipo="CHAR(20)" nulo="false" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="a40e752d-d271-4078-bac8-d987403f78b5">
+          <atributoEnt Id="22b61c1d-fef8-4d9c-a990-2280b9fd6783" nombre="combustible" tipo="INTEGER" nulo="true" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="dcfc0ad3-f809-475d-b133-f246caf7724e">
+          <atributoEnt Id="7e88f236-1225-454e-b7c5-4ea8c3f05c7d" nombre="potencia" tipo="INTEGER" nulo="false" />
+        </entidadHasAtributoEnt>
+      </atributoEnt>
+      <clavePrimaria>
+        <entidadHasClavePrimaria Id="4d83828f-4695-407f-b8d9-53ea1a55a742">
+          <clavePrimaria Id="451dca70-5a59-48c6-894f-496c5ab82207" nombre="matricula" tipo="CHAR(20)" />
+        </entidadHasClavePrimaria>
+      </clavePrimaria>
+    </entidad>
+    <entidad Id="e516da28-6ec2-4f17-8705-6901c52aa97b" nombre="Paquete">
+      <atributoEnt>
+        <entidadHasAtributoEnt Id="7d9cd320-0897-4195-a2bf-e49293fa7428">
+          <atributoEnt Id="9cb2ea9d-f8ad-4bcf-b39a-f41b7cbb0d9c" nombre="descripcion" tipo="CHAR(20)" nulo="false" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="658f4f2c-db49-495f-9b57-006aa89f765a">
+          <atributoEnt Id="c0ea0a35-0df5-4ef6-88fd-d0716d48ac96" nombre="destino" tipo="CHAR(20)" nulo="true" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="7d11c101-36f3-4b88-8926-a9a884bcee38">
+          <atributoEnt Id="35d15e47-23cf-4ec6-9a3a-0ff33ef2ded6" nombre="peso" tipo="INTEGER" nulo="true" />
+        </entidadHasAtributoEnt>
+      </atributoEnt>
+      <clavePrimaria>
+        <entidadHasClavePrimaria Id="7895fbf6-f23e-4156-acde-daf40fd539a7">
+          <clavePrimaria Id="ca9db83c-ed37-424a-9b86-bf7c3f963d62" nombre="codP" tipo="INTEGER" />
+        </entidadHasClavePrimaria>
+      </clavePrimaria>
+    </entidad>
+    <entidad Id="4747122a-236d-478c-8a6f-f1dfd35a5954" nombre="Incidencia">
+      <atributoEnt>
+        <entidadHasAtributoEnt Id="f3c576a9-078e-47fb-ac1f-1c11367c76de">
+          <atributoEnt Id="14821fe3-01c1-4205-9280-1aa4c2de594b" nombre="descripcion" tipo="CHAR(120)" nulo="false" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="8f2f27c8-9956-4c60-ac20-02a1efe3f5be">
+          <atributoEnt Id="7ee93bc0-7133-4808-8507-8c97abe98455" nombre="prioridad" tipo="INTEGER" nulo="false" />
+        </entidadHasAtributoEnt>
+      </atributoEnt>
+      <clavePrimaria>
+        <entidadHasClavePrimaria Id="05d0a3bc-ab02-4217-af4e-53af6ecb736c">
+          <clavePrimaria Id="d072c0d3-8c90-486e-85d3-9101454fc0ab" nombre="codI" tipo="INTEGER" />
+        </entidadHasClavePrimaria>
+      </clavePrimaria>
+    </entidad>
+  </elements>
+  <relacion>
+    <webERMDDHasRelacion Id="1c01cbfc-e23f-4ccf-a38b-757ae0a7ee12">
+      <relacion Id="cfc0afc7-e12d-45e2-9178-afa6be3766a5" nombre="distribuye">
+        <entidadIzq>
+          <relacionReferencesEntidadIzq Id="ec20cfcd-95b2-4dc1-bcd1-50bbc4fe104f" cardinalidad="1..n">
+            <entidadMoniker nombre="/6f79b8aa-c9ad-4732-8bfb-26935880d3aa/Paquete" />
+          </relacionReferencesEntidadIzq>
+        </entidadIzq>
+        <entidadDer>
+          <relacionReferencesEntidadDer Id="d6b9fe2f-1b7a-460d-b44a-f5d9f56f3320" cardinalidad="0..1">
+            <entidadMoniker nombre="/6f79b8aa-c9ad-4732-8bfb-26935880d3aa/Dron" />
+          </relacionReferencesEntidadDer>
+        </entidadDer>
+      </relacion>
+    </webERMDDHasRelacion>
+    <webERMDDHasRelacion Id="dd6ac354-33d8-4e8e-a473-3dd8d4fb60b6">
+      <relacion Id="e9fa5b4a-c3a6-49a7-a54a-a79228677f1e" nombre="realiza">
+        <entidadIzq>
+          <relacionReferencesEntidadIzq Id="9b674cb7-0601-4a5d-918f-07000860e095" cardinalidad="0..n">
+            <entidadMoniker nombre="/6f79b8aa-c9ad-4732-8bfb-26935880d3aa/Trayecto" />
+          </relacionReferencesEntidadIzq>
+        </entidadIzq>
+        <entidadDer>
+          <relacionReferencesEntidadDer Id="1c5458b7-306d-4c4b-b997-c17ea49217fa" cardinalidad="1..1">
+            <entidadMoniker nombre="/6f79b8aa-c9ad-4732-8bfb-26935880d3aa/Dron" />
+          </relacionReferencesEntidadDer>
+        </entidadDer>
+      </relacion>
+    </webERMDDHasRelacion>
+    <webERMDDHasRelacion Id="20fc86e2-c1b5-4fb2-8d95-c431aa66a62d">
+      <relacion Id="1ff7a2d8-2b65-4131-bd90-c9084840855a" nombre="sufre">
+        <entidadIzq>
+          <relacionReferencesEntidadIzq Id="3aaeed08-a63d-42b2-aa0d-63cdb5734f72" cardinalidad="0..n">
+            <entidadMoniker nombre="/6f79b8aa-c9ad-4732-8bfb-26935880d3aa/Trayecto" />
+          </relacionReferencesEntidadIzq>
+        </entidadIzq>
+        <entidadDer>
+          <relacionReferencesEntidadDer Id="052e66e6-73c2-4ab7-9f7a-bb97183d7590" cardinalidad="0..n">
+            <entidadMoniker nombre="/6f79b8aa-c9ad-4732-8bfb-26935880d3aa/Incidencia" />
+          </relacionReferencesEntidadDer>
+        </entidadDer>
+      </relacion>
+    </webERMDDHasRelacion>
+    <webERMDDHasRelacion Id="3feffced-6638-429c-8038-241a22e7b083">
+      <relacion Id="16fbd548-0244-41f1-b0f7-824fdfa12b98" nombre="seEncuentra">
+        <atributoRel>
+          <relacionReferencesAtributoRel Id="11742806-768e-40a2-b621-422e04237f40">
+            <atributoRelMoniker Id="96e0d5ee-e00c-4e45-87da-bdefc0d4b63b" />
+          </relacionReferencesAtributoRel>
+          <relacionReferencesAtributoRel Id="ae69f240-a4ed-4a6b-ab78-6932ba2a1e6a">
+            <atributoRelMoniker Id="41b1a7ae-7d13-43b4-959d-3e1dcce573c5" />
+          </relacionReferencesAtributoRel>
+          <relacionReferencesAtributoRel Id="7f05de07-7baf-42e8-86ba-000565b66110">
+            <atributoRelMoniker Id="15a074cb-5918-4e71-b07f-19eecaf2359a" />
+          </relacionReferencesAtributoRel>
+        </atributoRel>
+        <entidadIzq>
+          <relacionReferencesEntidadIzq Id="b8131717-63f9-482b-99a7-1dcc90cdccc5" cardinalidad="1..n">
+            <entidadMoniker nombre="/6f79b8aa-c9ad-4732-8bfb-26935880d3aa/Dron" />
+          </relacionReferencesEntidadIzq>
+        </entidadIzq>
+        <entidadDer>
+          <relacionReferencesEntidadDer Id="20da3011-83e9-4e88-8345-3526790f35d1" cardinalidad="1..n">
+            <entidadMoniker nombre="/6f79b8aa-c9ad-4732-8bfb-26935880d3aa/Dron" />
+          </relacionReferencesEntidadDer>
+        </entidadDer>
+      </relacion>
+    </webERMDDHasRelacion>
+    <webERMDDHasRelacion Id="2aa42d05-f896-4bfa-85a5-0ffdd72ad7ae">
+      <relacion Id="89860673-77ec-4688-9022-62656db9b2bd" nombre="encarga">
+        <entidadIzq>
+          <relacionReferencesEntidadIzq Id="0cbfcb58-8d15-403e-98a7-16f7a288a9af" cardinalidad="0..1">
+            <entidadMoniker nombre="/6f79b8aa-c9ad-4732-8bfb-26935880d3aa/Cliente" />
+          </relacionReferencesEntidadIzq>
+        </entidadIzq>
+        <entidadDer>
+          <relacionReferencesEntidadDer Id="2d7c484c-d69e-4d2c-94b8-db138b0755a0" cardinalidad="0..n">
+            <entidadMoniker nombre="/6f79b8aa-c9ad-4732-8bfb-26935880d3aa/Paquete" />
+          </relacionReferencesEntidadDer>
+        </entidadDer>
+      </relacion>
+    </webERMDDHasRelacion>
+  </relacion>
+  <atributoRel>
+    <webERMDDHasAtributoRel Id="d6fa18d1-b10c-403a-9b59-be2707732434">
+      <atributoRel Id="96e0d5ee-e00c-4e45-87da-bdefc0d4b63b" nombre="metros" tipo="INTEGER" nulo="true" />
+    </webERMDDHasAtributoRel>
+    <webERMDDHasAtributoRel Id="c286a9d5-9b96-464a-8a24-efb1454e4c0a">
+      <atributoRel Id="41b1a7ae-7d13-43b4-959d-3e1dcce573c5" nombre="fecha" tipo="DATE" nulo="true" />
+    </webERMDDHasAtributoRel>
+    <webERMDDHasAtributoRel Id="018202ae-9e70-49cc-aec3-14be9e2295e7">
+      <atributoRel Id="15a074cb-5918-4e71-b07f-19eecaf2359a" nombre="hora" tipo="TIME" nulo="true" />
+    </webERMDDHasAtributoRel>
+  </atributoRel>
+</webERMDD>

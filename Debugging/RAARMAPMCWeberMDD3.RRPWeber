@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webERMDD xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="035f4be2-d898-4a02-ab20-b8f76b08a713" nombre="IPS" xmlns="http://schemas.microsoft.com/dsltools/RAARMAPMCWeberMDD">
+  <elements>
+    <entidad Id="6b6f7053-5f07-43cd-9cce-786e0552609e" nombre="Entidad1">
+      <atributoEnt>
+        <entidadHasAtributoEnt Id="9e5f137d-d5ad-4c4e-8118-1949eda6488c">
+          <atributoEnt Id="2bc36fcf-30a3-4f3d-a94f-c76d858c0bac" nombre="atributo1" tipo="String" nulo="false" />
+        </entidadHasAtributoEnt>
+      </atributoEnt>
+      <clavePrimaria>
+        <entidadHasClavePrimaria Id="938add54-9483-4f69-9825-82181cf7318f">
+          <clavePrimaria Id="58161078-ea86-4f2f-adc6-07e64b190624" nombre="clave1" tipo="int" />
+        </entidadHasClavePrimaria>
+      </clavePrimaria>
+    </entidad>
+    <entidad Id="710799e1-0a29-416f-a055-8ace743225ca" nombre="Entidad2">
+      <atributoEnt>
+        <entidadHasAtributoEnt Id="0593358c-0b10-407c-a0e4-6326d0778367">
+          <atributoEnt Id="90dd1847-baec-4328-8f4c-403eddf3d6ee" nombre="atributo2" tipo="String" nulo="false" />
+        </entidadHasAtributoEnt>
+        <entidadHasAtributoEnt Id="c329a38e-59fc-4d43-922f-4e807ce51769">
+          <atributoEnt Id="d7a32539-294f-47d5-b6b9-129345dab76f" nombre="atributo3" tipo="String" nulo="false" />
+        </entidadHasAtributoEnt>
+      </atributoEnt>
+      <clavePrimaria>
+        <entidadHasClavePrimaria Id="cb7cade6-671d-4126-8e65-8b757b5aa529">
+          <clavePrimaria Id="875ff240-8b8b-494b-93cc-20ff00b31681" nombre="clave2" tipo="int" />
+        </entidadHasClavePrimaria>
+      </clavePrimaria>
+    </entidad>
+  </elements>
+  <relacion>
+    <webERMDDHasRelacion Id="79e0fe86-bf9b-4151-a0ca-4bcae3154518">
+      <relacion Id="444feb07-e808-485c-9ea2-403b1560acb9" nombre="nombreRel">
+        <atributoRel>
+          <relacionReferencesAtributoRel Id="2036df4f-3606-4dcf-8fd0-54ae6e26f6be">
+            <atributoRelMoniker Id="3686a166-ef98-47bb-8956-ad0ef6cc5aa2" />
+          </relacionReferencesAtributoRel>
+        </atributoRel>
+        <entidadIzq>
+          <relacionReferencesEntidadIzq Id="0a3da88e-78a6-4c46-88ee-07d17c295347" cardinalidad="1..n">
+            <entidadMoniker nombre="/035f4be2-d898-4a02-ab20-b8f76b08a713/Entidad1" />
+          </relacionReferencesEntidadIzq>
+        </entidadIzq>
+        <entidadDer>
+          <relacionReferencesEntidadDer Id="bae501e6-6a85-4ebe-a383-d1be9594bb21" cardinalidad="1..n">
+            <entidadMoniker nombre="/035f4be2-d898-4a02-ab20-b8f76b08a713/Entidad2" />
+          </relacionReferencesEntidadDer>
+        </entidadDer>
+      </relacion>
+    </webERMDDHasRelacion>
+  </relacion>
+  <atributoRel>
+    <webERMDDHasAtributoRel Id="453aeac1-78eb-42f6-a21d-371f4401d67c">
+      <atributoRel Id="3686a166-ef98-47bb-8956-ad0ef6cc5aa2" nombre="atrRel" tipo="int" nulo="false" />
+    </webERMDDHasAtributoRel>
+  </atributoRel>
+</webERMDD>

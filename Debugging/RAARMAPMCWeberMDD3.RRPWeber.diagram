@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rAARMAPMCWeberMDDDiagram dslVersion="1.0.0.0" Id="06275296-9820-4ab7-88aa-d898dd42d3d3" absoluteBounds="0, 0, 11, 8.5" name="RAARMAPMCWeberMDD3">
+  <webERMDDMoniker Id="035f4be2-d898-4a02-ab20-b8f76b08a713" />
+  <nestedChildShapes>
+    <entidadShape Id="d206ca88-6641-44e4-84c3-023c4a834e17" absoluteBounds="2.5, 1.875, 2, 3">
+      <entidadMoniker nombre="/035f4be2-d898-4a02-ab20-b8f76b08a713/Entidad1" />
+    </entidadShape>
+    <relacionShape Id="0f32407a-caee-47c0-94ad-8b5c7e7f3322" absoluteBounds="6, 3.125, 1.25, 0.5">
+      <relacionMoniker Id="444feb07-e808-485c-9ea2-403b1560acb9" />
+    </relacionShape>
+    <entidadShape Id="e10f5f2e-db65-4461-868a-3cf6e6f9b096" absoluteBounds="8.5, 2, 2, 3">
+      <entidadMoniker nombre="/035f4be2-d898-4a02-ab20-b8f76b08a713/Entidad2" />
+    </entidadShape>
+    <relIzq Id="a2e090ba-6b8e-4512-92c7-3042085fb14c" edgePoints="[(6 : 3.375); (4.5 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <relacionReferencesEntidadIzqMoniker Id="0a3da88e-78a6-4c46-88ee-07d17c295347" />
+      <relativeChildShapes />
+      <nodes>
+        <relacionShapeMoniker Id="0f32407a-caee-47c0-94ad-8b5c7e7f3322" />
+        <entidadShapeMoniker Id="d206ca88-6641-44e4-84c3-023c4a834e17" />
+      </nodes>
+    </relIzq>
+    <relDer Id="6aa05869-32c6-4417-a113-c77ac486a174" edgePoints="[(7.25 : 3.375); (8.5 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <relacionReferencesEntidadDerMoniker Id="bae501e6-6a85-4ebe-a383-d1be9594bb21" />
+      <relativeChildShapes />
+      <nodes>
+        <relacionShapeMoniker Id="0f32407a-caee-47c0-94ad-8b5c7e7f3322" />
+        <entidadShapeMoniker Id="e10f5f2e-db65-4461-868a-3cf6e6f9b096" />
+      </nodes>
+    </relDer>
+    <atributoRelShape Id="ed9e8887-1819-4b1f-b345-b69663a30ea7" absoluteBounds="6.875, 1.625, 0.875, 0.5">
+      <atributoRelMoniker Id="3686a166-ef98-47bb-8956-ad0ef6cc5aa2" />
+    </atributoRelShape>
+    <relAtrib Id="a3f566a8-9af3-44b4-8049-86f85c9ca83e" edgePoints="[(6.72095070422535 : 3.125); (7.3125 : 2.125)]" fixedFrom="Caller" fixedTo="NotFixed">
+      <relacionReferencesAtributoRelMoniker Id="2036df4f-3606-4dcf-8fd0-54ae6e26f6be" />
+      <nodes>
+        <relacionShapeMoniker Id="0f32407a-caee-47c0-94ad-8b5c7e7f3322" />
+        <atributoRelShapeMoniker Id="ed9e8887-1819-4b1f-b345-b69663a30ea7" />
+      </nodes>
+    </relAtrib>
+    <clavePrimShape Id="641491e3-c1b2-4075-a3e6-41f30a4837f6" absoluteBounds="2.75, 2.375, 1.5, 0.25">
+      <clavePrimariaMoniker Id="58161078-ea86-4f2f-adc6-07e64b190624" />
+    </clavePrimShape>
+    <atributoEntShape Id="98ef2a1b-2d35-446f-9abd-8b9a06063f9c" absoluteBounds="2.75, 2.875, 1.5, 0.25">
+      <atributoEntMoniker Id="2bc36fcf-30a3-4f3d-a94f-c76d858c0bac" />
+    </atributoEntShape>
+    <atributoEntShape Id="bc7d2c19-13f2-470d-9f7d-4250920a3dc7" absoluteBounds="8.75, 3, 1.5, 0.25">
+      <atributoEntMoniker Id="90dd1847-baec-4328-8f4c-403eddf3d6ee" />
+    </atributoEntShape>
+    <clavePrimShape Id="0944f9b3-bf26-4fd8-9aa8-5f74d9c993eb" absoluteBounds="8.75, 2.5, 1.5, 0.25">
+      <clavePrimariaMoniker Id="875ff240-8b8b-494b-93cc-20ff00b31681" />
+    </clavePrimShape>
+    <atributoEntShape Id="3c44ed05-ef23-417d-ae22-176eda249af9" absoluteBounds="8.75, 3.625, 1.5, 0.25">
+      <atributoEntMoniker Id="d7a32539-294f-47d5-b6b9-129345dab76f" />
+    </atributoEntShape>
+  </nestedChildShapes>
+</rAARMAPMCWeberMDDDiagram>

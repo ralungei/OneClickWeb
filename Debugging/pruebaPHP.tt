@@ -1,0 +1,340 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" language="C#" hostspecific="True"#>
+<#@ output extension=".php" #>
+<#@ RAARMAPMCWeberMDD processor="RAARMAPMCWeberMDDDirectiveProcessor" requires="fileName='MER.RRPWeber'" #>
+
+<#@ include file = "EF.utility.CS.ttinclude" #>
+
+<#
+var fileManager = EntityFrameworkTemplateFileManager.Create(this);
+
+foreach(Entidad varEnt in this.WebERMDD.Elements){
+
+	fileManager.StartNewFile(varEnt.nombre + ".php");
+
+	WriteLine("<html>");
+	WriteLine("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
+	WriteLine("<link rel=\"stylesheet\" href=\"http://www.w3schools.com/lib/w3.css\">");
+	WriteLine("<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">");
+	WriteLine("<head>");
+	WriteLine("<title>");
+	
+	Write("  ");
+	WriteLine(varEnt.nombre);
+
+	WriteLine("</title>");
+	WriteLine("</head>");
+
+	WriteLine("");
+
+	WriteLine("<body bgcolor=\"#FFFFFF\">");
+
+	WriteLine("");
+
+	WriteLine("<?php");
+	WriteLine(" if(!isset($_GET['var" + varEnt.ClavePrimaria.nombre + "'])){");
+	
+	Write("  ");
+	WriteLine("?>");
+		
+	Write("  ");
+	WriteLine("<div class=\"w3-card-4 w3-display-middle\" style=\"width:50%;\">");
+
+	Write("  ");
+	WriteLine("<div class=\"w3-container w3-margin\">");
+
+	Write("  ");
+	WriteLine("<br><i class=\"fa fa-arrow-left w3-xxlarge w3-text-grey w3-hover-opacity\" onclick=\"goBack()\"></i>");
+
+	Write("  ");
+	WriteLine("<script>");
+	Write("  ");
+	WriteLine("function goBack() {");
+	Write("      ");
+	WriteLine("window.history.back();");
+	Write("  ");
+	WriteLine("}");
+	Write("  ");
+	WriteLine("</script>");
+
+
+	Write("  ");
+	WriteLine("<form>");
+
+	Write("  ");
+	WriteLine("<h2 class=\"w3-center w3-text-indigo w3-border-bottom w3-border-indigo\">" + varEnt.nombre + "</h2>");
+
+	Write("    ");
+	WriteLine("<h4 class=\"w3-text-grey\">" + varEnt.ClavePrimaria.nombre + "</h4>"); 
+	Write("    ");
+	Write("<input name=\"var" + varEnt.ClavePrimaria.nombre);
+	WriteLine("\" type=\"" + varEnt.ClavePrimaria.tipo + "\" value=\"\" >");
+	WriteLine("<p>");
+
+	foreach(AtributoEnt varAtrEnt in varEnt.AtributoEnt){
+		Write("    ");
+		WriteLine("<h4 class=\"w3-text-grey\">" + varAtrEnt.nombre + "</h4>"); 
+		Write("    ");
+		Write("<input name=\"var" + varAtrEnt.nombre);
+		WriteLine("\" type=\"" + varAtrEnt.tipo + "\" value=\"\" >");
+		WriteLine("<p>");
+	}
+
+	WriteLine("<button class=\"w3-btn-block w3-indigo\">Alta</button><br><br>");
+	WriteLine("</form>");
+	WriteLine("</div>");
+	WriteLine("</div>");
+	WriteLine("<?php");
+	WriteLine("}");
+	
+	WriteLine("else{");
+	Write("  ");
+	WriteLine("$conex = @mysql_connect(\"localhost\",\"root\") or die (\"ERROR...\");");
+	Write("  ");
+	WriteLine("mysql_select_db(\"" + this.WebERMDD.nombre + "\") or die (\"ERROR CON LA BASE DE DATOS\");");
+	Write("  ");
+	WriteLine("$" + varEnt.ClavePrimaria.nombre + " = $_GET['var" + varEnt.ClavePrimaria.nombre + "'];");
+	foreach(AtributoEnt varAtrEnt in varEnt.AtributoEnt){
+		Write("  ");
+		WriteLine("$" + varAtrEnt.nombre + " = $_GET['var" + varAtrEnt.nombre + "'];");
+	}
+	Write("  ");
+	Write("$resultado = mysql_query(\"INSERT INTO " + varEnt.nombre + " VALUES ('$" + varEnt.ClavePrimaria.nombre + "'");
+	foreach(AtributoEnt varAtrEnt in varEnt.AtributoEnt){
+		Write(",'$" + varAtrEnt.nombre + "'");
+	}
+	WriteLine(")\");");
+	WriteLine("");
+	Write("  ");
+	WriteLine("if ($resultado)");
+	Write("    ");
+	WriteLine("echo\" <b>Datos Insertados</b> \";");
+	Write("  ");
+	WriteLine("else");
+	Write("    ");
+	WriteLine("echo\"Error en la inserción\";");
+	Write("  ");
+	WriteLine("mysql_close();");
+	WriteLine("}");
+	WriteLine("?>");
+	WriteLine("</body>");
+	WriteLine("</html>");
+}	
+
+
+
+
+foreach(Relacion varRel in this.WebERMDD.Relacion){
+	if((RelacionReferencesEntidadIzq.GetLinkToEntidadIzq(varRel).cardinalidad == "0..n" || RelacionReferencesEntidadIzq.GetLinkToEntidadIzq(varRel).cardinalidad == "1..n")
+		 && (RelacionReferencesEntidadDer.GetLinkToEntidadDer(varRel).cardinalidad == "0..n" ||RelacionReferencesEntidadDer.GetLinkToEntidadDer(varRel).cardinalidad == "1..n")){
+		fileManager.StartNewFile(varRel.nombre + ".php");
+
+		WriteLine("<html>");
+		WriteLine("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
+		WriteLine("<link rel=\"stylesheet\" href=\"http://www.w3schools.com/lib/w3.css\">");
+		WriteLine("<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">");
+		WriteLine("<head>");
+		WriteLine("<title>");
+	
+		Write("  ");
+		WriteLine(varRel.nombre);
+
+		WriteLine("</title>");
+		WriteLine("</head>");
+
+		WriteLine("");
+
+		WriteLine("<body bgcolor=\"#FFFFFF\">");
+
+		WriteLine("");
+
+		WriteLine("<?php");
+		if(varRel.EntidadIzq.nombre == varRel.EntidadDer.nombre)
+			WriteLine(" if(!isset($_GET['var" + "origen" + varRel.EntidadIzq.ClavePrimaria.nombre + "'])){");
+		else
+			WriteLine(" if(!isset($_GET['var" + varRel.EntidadIzq.ClavePrimaria.nombre + "'])){");
+
+		Write("  ");
+		WriteLine("?>");
+		
+		Write("  ");
+		WriteLine("<div class=\"w3-card-4 w3-display-middle\" style=\"width:50%;\">");
+
+		Write("  ");
+		WriteLine("<div class=\"w3-container w3-margin\">");
+
+		Write("  ");
+		WriteLine("<br><i class=\"fa fa-arrow-left w3-xxlarge w3-text-grey w3-hover-opacity\" onclick=\"goBack()\"></i>");
+
+		Write("  ");
+		WriteLine("<script>");
+		Write("  ");
+		WriteLine("function goBack() {");
+		Write("      ");
+		WriteLine("window.history.back();");
+		Write("  ");
+		WriteLine("}");
+		Write("  ");
+		WriteLine("</script>");
+
+
+		Write("  ");
+		WriteLine("<form>");
+
+		Write("  ");
+		WriteLine("<h2 class=\"w3-center w3-text-indigo w3-border-bottom w3-border-indigo\">" + varRel.nombre + "</h2>");
+
+		if(varRel.EntidadIzq.nombre == varRel.EntidadDer.nombre){
+			Write("    ");
+			WriteLine("<h4 class=\"w3-text-grey\">" +  varRel.EntidadIzq.ClavePrimaria.nombre + " origen" + "</h4>"); 
+			Write("    ");
+			Write("<input name=\"var" + "origen" + varRel.EntidadIzq.ClavePrimaria.nombre);
+			WriteLine("\" type=\"" + varRel.EntidadIzq.ClavePrimaria.tipo + "\" value=\"\" >");
+			WriteLine("<p>");
+
+			Write("    ");
+			WriteLine("<h4 class=\"w3-text-grey\">" + varRel.EntidadIzq.ClavePrimaria.nombre + " destino" + "</h4>"); 
+			Write("    ");
+			Write("<input name=\"var" + "destino" + varRel.EntidadIzq.ClavePrimaria.nombre);
+			WriteLine("\" type=\"" + varRel.EntidadIzq.ClavePrimaria.tipo + "\" value=\"\" >");
+			WriteLine("<p>");
+		}
+		else{
+			Write("    ");
+			WriteLine("<h4 class=\"w3-text-grey\">" +  varRel.EntidadIzq.ClavePrimaria.nombre + "</h4>"); 
+			Write("    ");
+			Write("<input name=\"var" + varRel.EntidadIzq.ClavePrimaria.nombre);
+			WriteLine("\" type=\"" + varRel.EntidadIzq.ClavePrimaria.tipo + "\" value=\"\" >");
+			WriteLine("<p>");
+
+			Write("    ");
+			WriteLine("<h4 class=\"w3-text-grey\">" +  varRel.EntidadDer.ClavePrimaria.nombre + "</h4>"); 
+			Write("    ");
+			Write("<input name=\"var" + varRel.EntidadDer.ClavePrimaria.nombre);
+			WriteLine("\" type=\"" + varRel.EntidadDer.ClavePrimaria.tipo + "\" value=\"\" >");
+			WriteLine("<p>");
+		}
+
+
+		foreach(AtributoRel varAtrRel in varRel.AtributoRel){
+		Write("    ");
+		WriteLine("<h4 class=\"w3-text-grey\">" + varAtrRel.nombre + "</h4>"); 
+		Write("    ");
+		Write("<input name=\"var" + varAtrRel.nombre);
+		WriteLine("\" type=\"" + varAtrRel.tipo + "\" value=\"\" >");
+		WriteLine("<p>");
+		}
+
+		WriteLine("<button class=\"w3-btn-block w3-indigo\">Alta</button><br><br>");
+		WriteLine("</form>");
+		WriteLine("</div>");
+		WriteLine("</div>");
+		WriteLine("<?php");
+		WriteLine("}");
+	
+		WriteLine("else{");
+		Write("  ");
+		WriteLine("$conex = @mysql_connect(\"localhost\",\"root\") or die (\"ERROR...\");");
+		Write("  ");
+		WriteLine("mysql_select_db(\"" + this.WebERMDD.nombre + "\") or die (\"ERROR CON LA BASE DE DATOS\");");
+	
+		if(varRel.EntidadIzq.nombre == varRel.EntidadDer.nombre){
+			Write("  ");
+			WriteLine("$" + "origen" + varRel.EntidadIzq.ClavePrimaria.nombre + " = $_GET['var" + "origen" + varRel.EntidadIzq.ClavePrimaria.nombre + "'];");
+			Write("  ");
+			WriteLine("$" + "destino" + varRel.EntidadIzq.ClavePrimaria.nombre + " = $_GET['var" + "destino" + varRel.EntidadIzq.ClavePrimaria.nombre + "'];");
+	
+		}
+		else{
+			Write("  ");
+			WriteLine("$" + varRel.EntidadIzq.ClavePrimaria.nombre + " = $_GET['var" + varRel.EntidadIzq.ClavePrimaria.nombre + "'];");
+			Write("  ");
+			WriteLine("$" + varRel.EntidadDer.ClavePrimaria.nombre + " = $_GET['var" + varRel.EntidadDer.ClavePrimaria.nombre + "'];");
+		}
+
+		if(varRel.AtributoRel.Count > 0){
+			foreach(AtributoRel varAtrRel in varRel.AtributoRel){
+				Write("  ");
+				WriteLine("$" + varAtrRel.nombre + " = $_GET['var" + varAtrRel.nombre + "'];");
+			}
+		}
+
+		if(varRel.EntidadIzq.nombre == varRel.EntidadDer.nombre){
+			Write("  ");
+			Write("$resultado = mysql_query(\"INSERT INTO " + varRel.nombre + " VALUES ('$" + "origen" + varRel.EntidadIzq.ClavePrimaria.nombre + "'");
+			Write(",'$" + "destino" + varRel.EntidadDer.ClavePrimaria.nombre + "'");
+		}
+		else{
+			Write("  ");
+			Write("$resultado = mysql_query(\"INSERT INTO " + varRel.nombre + " VALUES ('$" + varRel.EntidadIzq.ClavePrimaria.nombre + "'");
+			Write(",'$" + varRel.EntidadDer.ClavePrimaria.nombre + "'");
+		}
+
+		if(varRel.AtributoRel.Count > 0){
+			foreach(AtributoRel varAtrRel in varRel.AtributoRel){
+				Write(",'$" + varAtrRel.nombre + "'");
+			}
+		}
+		WriteLine(")\");");
+		WriteLine("");
+		Write("  ");
+		WriteLine("if ($resultado)");
+		Write("    ");
+		WriteLine("echo\" <b>Datos Insertados</b> \";");
+		Write("  ");
+		WriteLine("else");
+		Write("    ");
+		WriteLine("echo\"Error en la inserción\";");
+		Write("  ");
+		WriteLine("mysql_close();");
+		WriteLine("}");
+		WriteLine("?>");
+		WriteLine("</body>");
+		WriteLine("</html>");
+	}
+}
+
+
+
+
+
+fileManager.StartNewFile("Menu.php");
+WriteLine("<html>");
+WriteLine("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
+WriteLine("<link rel=\"stylesheet\" href=\"http://www.w3schools.com/lib/w3.css\">");
+WriteLine("");
+WriteLine("<body>");
+WriteLine("<div class=\"w3-dark-grey w3-center\">");
+Write("    ");
+WriteLine("<h1>" + this.WebERMDD.nombre + "</h1>");
+WriteLine("</div>");
+Write("    ");
+WriteLine("<div class=\"w3-middle w3-padding-xlarge w3-wide w3-center\">");
+
+
+foreach(Entidad varEnt in this.WebERMDD.Elements){
+	Write("        ");
+	WriteLine("<a class=\"w3-btn w3-round w3-indigo w3-hover-opacity w3-hover-grey  w3-xxlarge \" href=\"./" + varEnt.nombre +".php\">" + varEnt.nombre + "</a>");
+	Write("        ");
+	WriteLine("<br><br>");
+}
+
+foreach(Relacion varRel in this.WebERMDD.Relacion){
+	if((RelacionReferencesEntidadIzq.GetLinkToEntidadIzq(varRel).cardinalidad == "0..n" || RelacionReferencesEntidadIzq.GetLinkToEntidadIzq(varRel).cardinalidad == "1..n")
+		 && (RelacionReferencesEntidadDer.GetLinkToEntidadDer(varRel).cardinalidad == "0..n" ||RelacionReferencesEntidadDer.GetLinkToEntidadDer(varRel).cardinalidad == "1..n")){
+		Write("        ");
+		WriteLine("<a class=\"w3-btn w3-round w3-indigo w3-hover-opacity w3-hover-grey  w3-xxlarge \" href=\"./" + varRel.nombre +".php\">" + varRel.nombre + "</a>");
+		Write("        ");
+		WriteLine("<br><br>");
+	}
+}
+
+Write("    ");
+WriteLine("</div>");
+WriteLine("");
+WriteLine("</body>");
+WriteLine("</html>");
+
+
+
+fileManager.Process();
+#>

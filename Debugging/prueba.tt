@@ -1,0 +1,109 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".sql" #>
+<#@ RAARMAPMCWeberMDD processor="RAARMAPMCWeberMDDDirectiveProcessor" requires="fileName='MER.RRPWeber'" #>
+
+<#
+WriteLine("CREATE DATABASE " + this.WebERMDD.nombre + ";");
+WriteLine("USE " + this.WebERMDD.nombre + ";");
+
+if(this.WebERMDD.Elements.Count > 0){
+	foreach(Entidad varEnt in this.WebERMDD.Elements){
+		Write("       ");
+		WriteLine("CREATE TABLE IF NOT EXISTS " + varEnt.nombre);
+	
+		Write("       ");
+		WriteLine("(");
+
+
+
+		Write("        ");
+		Write(varEnt.ClavePrimaria.nombre + " " + varEnt.ClavePrimaria.tipo + " ");
+		Write("NOT NULL");
+		WriteLine(",");
+
+
+
+		foreach(AtributoEnt varAtr in varEnt.AtributoEnt){
+			Write("        ");
+			Write(varAtr.nombre + " " + varAtr.tipo + " ");
+	
+			if(varAtr.nulo)
+				Write("NOT NULL");
+			else
+				Write("NULL");
+
+			WriteLine(",");
+		}
+
+		Write("        ");
+		WriteLine("PRIMARY KEY (" + varEnt.ClavePrimaria.nombre + "));" );
+	}
+}
+
+if(this.WebERMDD.Relacion.Count > 0){
+	foreach(Relacion varRel in this.WebERMDD.Relacion){
+		if((RelacionReferencesEntidadIzq.GetLinkToEntidadIzq(varRel).cardinalidad == "0..n" || RelacionReferencesEntidadIzq.GetLinkToEntidadIzq(varRel).cardinalidad == "1..n")
+		 && (RelacionReferencesEntidadDer.GetLinkToEntidadDer(varRel).cardinalidad == "0..n" ||RelacionReferencesEntidadDer.GetLinkToEntidadDer(varRel).cardinalidad == "1..n")){
+			Write("       ");
+			WriteLine("CREATE TABLE IF NOT EXISTS " + varRel.nombre);
+	
+			Write("       ");
+			WriteLine("(");
+
+
+			if(varRel.EntidadIzq.nombre == varRel.EntidadDer.nombre){
+				Write("        ");
+				Write("origen" + varRel.EntidadIzq.ClavePrimaria.nombre + " " + varRel.EntidadIzq.ClavePrimaria.tipo + " NOT NULL");
+				WriteLine(",");
+
+				Write("        ");
+				Write("destino" + varRel.EntidadIzq.ClavePrimaria.nombre + " " + varRel.EntidadIzq.ClavePrimaria.tipo + " NOT NULL");
+				WriteLine(",");
+			}
+
+			else{
+				Write("        ");
+				Write(varRel.EntidadIzq.ClavePrimaria.nombre + " " + varRel.EntidadIzq.ClavePrimaria.tipo + " NOT NULL");
+				WriteLine(",");
+
+				Write("        ");
+				Write(varRel.EntidadDer.ClavePrimaria.nombre + " " + varRel.EntidadDer.ClavePrimaria.tipo + " NOT NULL");
+				WriteLine(",");
+			}
+
+			foreach(AtributoRel varAtrRel in varRel.AtributoRel){
+				Write("        ");
+				Write(varAtrRel.nombre + " " + varAtrRel.tipo + " ");
+				if(varAtrRel.nulo)
+					Write("NOT NULL");
+				else
+					Write("NULL");
+		
+				WriteLine(",");
+			}
+
+			if(varRel.EntidadIzq.nombre == varRel.EntidadDer.nombre){
+				Write("        ");
+				Write("FOREIGN KEY " + "(" + "origen" + varRel.EntidadIzq.ClavePrimaria.nombre + ")" + " REFERENCES " + varRel.EntidadIzq.nombre + " (" + varRel.EntidadIzq.ClavePrimaria.nombre + ")");
+				WriteLine(",");
+
+				Write("        ");
+				Write("FOREIGN KEY " + "(" + "destino" + varRel.EntidadIzq.ClavePrimaria.nombre + ")" + " REFERENCES " + varRel.EntidadIzq.nombre + " (" + varRel.EntidadIzq.ClavePrimaria.nombre + ")");
+				WriteLine(");");
+			}
+
+			else{
+				Write("        ");
+				Write("FOREIGN KEY " + "(" + varRel.EntidadIzq.ClavePrimaria.nombre + ")" + " REFERENCES " + varRel.EntidadIzq.nombre + " (" + varRel.EntidadIzq.ClavePrimaria.nombre + ")");
+				WriteLine(",");
+	
+				Write("        ");
+				Write("FOREIGN KEY " + "(" + varRel.EntidadDer.ClavePrimaria.nombre + ")" + " REFERENCES " + varRel.EntidadDer.nombre + " (" + varRel.EntidadDer.ClavePrimaria.nombre + ")");
+				WriteLine(");");
+			}
+		}
+	}
+}
+
+
+#>
