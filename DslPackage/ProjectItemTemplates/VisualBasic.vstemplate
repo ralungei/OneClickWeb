@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{01dafe72-9c74-40a1-badb-ba53e636f209}</TemplateID>
+		<Name Package="{c69cfe43-b3da-4556-bfd5-f2ad858e1dce}" ID="103"/>
+		<Description Package="{c69cfe43-b3da-4556-bfd5-f2ad858e1dce}" ID="102"/>
+		<Icon Package="{c69cfe43-b3da-4556-bfd5-f2ad858e1dce}" ID="201" />
+		<ProjectType>VisualBasic</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>RAARMAPMCWeberMDD.RRPWeber</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.RRPWeber">RRPWeber.RRPWeber</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.RRPWeber.diagram">RRPWeber.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+

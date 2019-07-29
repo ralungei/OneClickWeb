@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RAARMAPMCWeberMDDDomainModel.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RAARMAPMCWeberMDD</value>
+    <comment>Description for DslLibrary &apos;RAARMAPMCWeberMDD&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RAARMAPMCWeberMDDDomainModel.DisplayName" xml:space="preserve">
+    <value>RAARMAPMCWeberMDD</value>
+    <comment>DisplayName for DslLibrary &apos;RAARMAPMCWeberMDD&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDD.Description" xml:space="preserve">
+    <value>The root in which all other elements are embedded. Appears as a diagram.</value>
+    <comment>Description for DomainClass &apos;WebERMDD&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDD.DisplayName" xml:space="preserve">
+    <value>Web ERMDD</value>
+    <comment>DisplayName for DomainClass &apos;WebERMDD&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDD/nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.WebERMDD.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;WebERMDD&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDD/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;WebERMDD&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.Entidad.Description" xml:space="preserve">
+    <value>Elements embedded in the model. Appear as boxes on the diagram.</value>
+    <comment>Description for DomainClass &apos;Entidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainClass &apos;Entidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.Entidad/nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.Entidad.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;Entidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.Entidad/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;Entidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt</value>
+    <comment>Description for DomainClass &apos;AtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt.DisplayName" xml:space="preserve">
+    <value>Atributo Ent</value>
+    <comment>DisplayName for DomainClass &apos;AtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt/nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;AtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;AtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt/tipo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt.Tipo</value>
+    <comment>Description for DomainProperty &apos;tipo&apos; on DomainClass &apos;AtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt/tipo.DisplayName" xml:space="preserve">
+    <value>Tipo</value>
+    <comment>DisplayName for DomainProperty &apos;tipo&apos; on DomainClass &apos;AtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt/nulo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt.Nulo</value>
+    <comment>Description for DomainProperty &apos;nulo&apos; on DomainClass &apos;AtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoEnt/nulo.DisplayName" xml:space="preserve">
+    <value>Nulo</value>
+    <comment>DisplayName for DomainProperty &apos;nulo&apos; on DomainClass &apos;AtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.Relacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.Relacion</value>
+    <comment>Description for DomainClass &apos;Relacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainClass &apos;Relacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.Relacion/nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.Relacion.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;Relacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.Relacion/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;Relacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoRel.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.AtributoRel</value>
+    <comment>Description for DomainClass &apos;AtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoRel.DisplayName" xml:space="preserve">
+    <value>Atributo Rel</value>
+    <comment>DisplayName for DomainClass &apos;AtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoRel/nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.AtributoRel.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;AtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoRel/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;AtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoRel/tipo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.AtributoRel.Tipo</value>
+    <comment>Description for DomainProperty &apos;tipo&apos; on DomainClass &apos;AtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoRel/tipo.DisplayName" xml:space="preserve">
+    <value>Tipo</value>
+    <comment>DisplayName for DomainProperty &apos;tipo&apos; on DomainClass &apos;AtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoRel/nulo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.AtributoRel.Nulo</value>
+    <comment>Description for DomainProperty &apos;nulo&apos; on DomainClass &apos;AtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoRel/nulo.DisplayName" xml:space="preserve">
+    <value>Nulo</value>
+    <comment>DisplayName for DomainProperty &apos;nulo&apos; on DomainClass &apos;AtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.ClavePrimaria.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.ClavePrimaria</value>
+    <comment>Description for DomainClass &apos;ClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.ClavePrimaria.DisplayName" xml:space="preserve">
+    <value>Clave Primaria</value>
+    <comment>DisplayName for DomainClass &apos;ClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.ClavePrimaria/nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.ClavePrimaria.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;ClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.ClavePrimaria/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;ClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.ClavePrimaria/tipo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.ClavePrimaria.Tipo</value>
+    <comment>Description for DomainProperty &apos;tipo&apos; on DomainClass &apos;ClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.ClavePrimaria/tipo.DisplayName" xml:space="preserve">
+    <value>Tipo</value>
+    <comment>DisplayName for DomainProperty &apos;tipo&apos; on DomainClass &apos;ClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasElements.Description" xml:space="preserve">
+    <value>Embedding relationship between the Model and Elements</value>
+    <comment>Description for DomainClass &apos;WebERMDDHasElements&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasElements.DisplayName" xml:space="preserve">
+    <value>Web ERMDDHas Elements</value>
+    <comment>DisplayName for DomainClass &apos;WebERMDDHasElements&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasElements/WebERMDD.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;WebERMDD&apos; on DomainRelationship &apos;WebERMDDHasElements&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasElements/WebERMDD.DisplayName" xml:space="preserve">
+    <value>Web ERMDD</value>
+    <comment>DisplayName for DomainRole &apos;WebERMDD&apos; on DomainRelationship &apos;WebERMDDHasElements&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasElements/WebERMDD.PropertyDisplayName" xml:space="preserve">
+    <value>Elements</value>
+    <comment>PropertyDisplayName for DomainRole &apos;WebERMDD&apos; on DomainRelationship &apos;WebERMDDHasElements&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasElements/Element.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;Element&apos; on DomainRelationship &apos;WebERMDDHasElements&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasElements/Element.DisplayName" xml:space="preserve">
+    <value>Element</value>
+    <comment>DisplayName for DomainRole &apos;Element&apos; on DomainRelationship &apos;WebERMDDHasElements&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasElements/Element.PropertyDisplayName" xml:space="preserve">
+    <value>Web ERMDD</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Element&apos; on DomainRelationship &apos;WebERMDDHasElements&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion</value>
+    <comment>Description for DomainClass &apos;WebERMDDHasRelacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion.DisplayName" xml:space="preserve">
+    <value>Web ERMDDHas Relacion</value>
+    <comment>DisplayName for DomainClass &apos;WebERMDDHasRelacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion/WebERMDD.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion.WebERMDD</value>
+    <comment>Description for DomainRole &apos;WebERMDD&apos; on DomainRelationship &apos;WebERMDDHasRelacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion/WebERMDD.DisplayName" xml:space="preserve">
+    <value>Web ERMDD</value>
+    <comment>DisplayName for DomainRole &apos;WebERMDD&apos; on DomainRelationship &apos;WebERMDDHasRelacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion/WebERMDD.PropertyDisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;WebERMDD&apos; on DomainRelationship &apos;WebERMDDHasRelacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion/Relacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion.Relacion</value>
+    <comment>Description for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;WebERMDDHasRelacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion/Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;WebERMDDHasRelacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasRelacion/Relacion.PropertyDisplayName" xml:space="preserve">
+    <value>Web ERMDD</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;WebERMDDHasRelacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt</value>
+    <comment>Description for DomainClass &apos;EntidadHasAtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt.DisplayName" xml:space="preserve">
+    <value>Entidad Has Atributo Ent</value>
+    <comment>DisplayName for DomainClass &apos;EntidadHasAtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt/Entidad.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadHasAtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadHasAtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>Atributo Ent</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadHasAtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt/AtributoEnt.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt.AtributoEnt</value>
+    <comment>Description for DomainRole &apos;AtributoEnt&apos; on DomainRelationship &apos;EntidadHasAtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt/AtributoEnt.DisplayName" xml:space="preserve">
+    <value>Atributo Ent</value>
+    <comment>DisplayName for DomainRole &apos;AtributoEnt&apos; on DomainRelationship &apos;EntidadHasAtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasAtributoEnt/AtributoEnt.PropertyDisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>PropertyDisplayName for DomainRole &apos;AtributoEnt&apos; on DomainRelationship &apos;EntidadHasAtributoEnt&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria</value>
+    <comment>Description for DomainClass &apos;EntidadHasClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria.DisplayName" xml:space="preserve">
+    <value>Entidad Has Clave Primaria</value>
+    <comment>DisplayName for DomainClass &apos;EntidadHasClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria/Entidad.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadHasClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadHasClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>Clave Primaria</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadHasClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria/ClavePrimaria.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria.ClavePrimaria</value>
+    <comment>Description for DomainRole &apos;ClavePrimaria&apos; on DomainRelationship &apos;EntidadHasClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria/ClavePrimaria.DisplayName" xml:space="preserve">
+    <value>Clave Primaria</value>
+    <comment>DisplayName for DomainRole &apos;ClavePrimaria&apos; on DomainRelationship &apos;EntidadHasClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadHasClavePrimaria/ClavePrimaria.PropertyDisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ClavePrimaria&apos; on DomainRelationship &apos;EntidadHasClavePrimaria&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel</value>
+    <comment>Description for DomainClass &apos;RelacionReferencesAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel.DisplayName" xml:space="preserve">
+    <value>Relacion References Atributo Rel</value>
+    <comment>DisplayName for DomainClass &apos;RelacionReferencesAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel/Relacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel.Relacion</value>
+    <comment>Description for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;RelacionReferencesAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel/Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;RelacionReferencesAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel/Relacion.PropertyDisplayName" xml:space="preserve">
+    <value>Atributo Rel</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;RelacionReferencesAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel/AtributoRel.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel.AtributoRel</value>
+    <comment>Description for DomainRole &apos;AtributoRel&apos; on DomainRelationship &apos;RelacionReferencesAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel/AtributoRel.DisplayName" xml:space="preserve">
+    <value>Atributo Rel</value>
+    <comment>DisplayName for DomainRole &apos;AtributoRel&apos; on DomainRelationship &apos;RelacionReferencesAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesAtributoRel/AtributoRel.PropertyDisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;AtributoRel&apos; on DomainRelationship &apos;RelacionReferencesAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel</value>
+    <comment>Description for DomainClass &apos;WebERMDDHasAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel.DisplayName" xml:space="preserve">
+    <value>Web ERMDDHas Atributo Rel</value>
+    <comment>DisplayName for DomainClass &apos;WebERMDDHasAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel/WebERMDD.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel.WebERMDD</value>
+    <comment>Description for DomainRole &apos;WebERMDD&apos; on DomainRelationship &apos;WebERMDDHasAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel/WebERMDD.DisplayName" xml:space="preserve">
+    <value>Web ERMDD</value>
+    <comment>DisplayName for DomainRole &apos;WebERMDD&apos; on DomainRelationship &apos;WebERMDDHasAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel/WebERMDD.PropertyDisplayName" xml:space="preserve">
+    <value>Atributo Rel</value>
+    <comment>PropertyDisplayName for DomainRole &apos;WebERMDD&apos; on DomainRelationship &apos;WebERMDDHasAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel/AtributoRel.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel.AtributoRel</value>
+    <comment>Description for DomainRole &apos;AtributoRel&apos; on DomainRelationship &apos;WebERMDDHasAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel/AtributoRel.DisplayName" xml:space="preserve">
+    <value>Atributo Rel</value>
+    <comment>DisplayName for DomainRole &apos;AtributoRel&apos; on DomainRelationship &apos;WebERMDDHasAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.WebERMDDHasAtributoRel/AtributoRel.PropertyDisplayName" xml:space="preserve">
+    <value>Web ERMDD</value>
+    <comment>PropertyDisplayName for DomainRole &apos;AtributoRel&apos; on DomainRelationship &apos;WebERMDDHasAtributoRel&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq</value>
+    <comment>Description for DomainClass &apos;RelacionReferencesEntidadIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq.DisplayName" xml:space="preserve">
+    <value>Relacion References Entidad Izq</value>
+    <comment>DisplayName for DomainClass &apos;RelacionReferencesEntidadIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq/cardinalidad.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq.Cardinalidad</value>
+    <comment>Description for DomainProperty &apos;cardinalidad&apos; on DomainClass &apos;RelacionReferencesEntidadIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq/cardinalidad.DisplayName" xml:space="preserve">
+    <value>Cardinalidad</value>
+    <comment>DisplayName for DomainProperty &apos;cardinalidad&apos; on DomainClass &apos;RelacionReferencesEntidadIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq/Relacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq.Relacion</value>
+    <comment>Description for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;RelacionReferencesEntidadIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq/Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;RelacionReferencesEntidadIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq/Relacion.PropertyDisplayName" xml:space="preserve">
+    <value>Entidad Izq</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;RelacionReferencesEntidadIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq/Entidad.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;RelacionReferencesEntidadIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;RelacionReferencesEntidadIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadIzq/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>Relacion Izq</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;RelacionReferencesEntidadIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer</value>
+    <comment>Description for DomainClass &apos;RelacionReferencesEntidadDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer.DisplayName" xml:space="preserve">
+    <value>Relacion References Entidad Der</value>
+    <comment>DisplayName for DomainClass &apos;RelacionReferencesEntidadDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer/cardinalidad.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer.Cardinalidad</value>
+    <comment>Description for DomainProperty &apos;cardinalidad&apos; on DomainClass &apos;RelacionReferencesEntidadDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer/cardinalidad.DisplayName" xml:space="preserve">
+    <value>Cardinalidad</value>
+    <comment>DisplayName for DomainProperty &apos;cardinalidad&apos; on DomainClass &apos;RelacionReferencesEntidadDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer/Relacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer.Relacion</value>
+    <comment>Description for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;RelacionReferencesEntidadDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer/Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;RelacionReferencesEntidadDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer/Relacion.PropertyDisplayName" xml:space="preserve">
+    <value>Entidad Der</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;RelacionReferencesEntidadDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer/Entidad.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;RelacionReferencesEntidadDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;RelacionReferencesEntidadDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionReferencesEntidadDer/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>Relacion Der</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;RelacionReferencesEntidadDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadShape.Description" xml:space="preserve">
+    <value>Shape used to represent ExampleElements on a Diagram.</value>
+    <comment>Description for DomainClass &apos;EntidadShape&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.EntidadShape.DisplayName" xml:space="preserve">
+    <value>Entidad Shape</value>
+    <comment>DisplayName for DomainClass &apos;EntidadShape&apos;</comment>
+  </data>
+  <data name="EntidadShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoEntShape.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.AtributoEntShape</value>
+    <comment>Description for DomainClass &apos;AtributoEntShape&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoEntShape.DisplayName" xml:space="preserve">
+    <value>Atributo Ent Shape</value>
+    <comment>DisplayName for DomainClass &apos;AtributoEntShape&apos;</comment>
+  </data>
+  <data name="AtributoEntShapeDecNombreDefaultText" xml:space="preserve">
+    <value>IntroduceNombre</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoRelShape.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.AtributoRelShape</value>
+    <comment>Description for DomainClass &apos;AtributoRelShape&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.AtributoRelShape.DisplayName" xml:space="preserve">
+    <value>Atributo Rel Shape</value>
+    <comment>DisplayName for DomainClass &apos;AtributoRelShape&apos;</comment>
+  </data>
+  <data name="AtributoRelShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.ClavePrimShape.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.ClavePrimShape</value>
+    <comment>Description for DomainClass &apos;ClavePrimShape&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.ClavePrimShape.DisplayName" xml:space="preserve">
+    <value>Clave Prim Shape</value>
+    <comment>DisplayName for DomainClass &apos;ClavePrimShape&apos;</comment>
+  </data>
+  <data name="ClavePrimShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionShape.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelacionShape</value>
+    <comment>Description for DomainClass &apos;RelacionShape&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelacionShape.DisplayName" xml:space="preserve">
+    <value>Relacion Shape</value>
+    <comment>DisplayName for DomainClass &apos;RelacionShape&apos;</comment>
+  </data>
+  <data name="RelacionShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelIzq.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelIzq</value>
+    <comment>Description for DomainClass &apos;RelIzq&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelIzq.DisplayName" xml:space="preserve">
+    <value>Rel Izq</value>
+    <comment>DisplayName for DomainClass &apos;RelIzq&apos;</comment>
+  </data>
+  <data name="RelIzqNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelDer.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelDer</value>
+    <comment>Description for DomainClass &apos;RelDer&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelDer.DisplayName" xml:space="preserve">
+    <value>Rel Der</value>
+    <comment>DisplayName for DomainClass &apos;RelDer&apos;</comment>
+  </data>
+  <data name="RelDerNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelAtrib.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RelAtrib</value>
+    <comment>Description for DomainClass &apos;RelAtrib&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RelAtrib.DisplayName" xml:space="preserve">
+    <value>Rel Atrib</value>
+    <comment>DisplayName for DomainClass &apos;RelAtrib&apos;</comment>
+  </data>
+  <data name="FormatList" xml:space="preserve">
+    <value>RAARMAPMCWeberMDD (*.RRPWeber)|*.RRPWeber</value>
+    <comment>A list of file format specifiers for the Save dialog box</comment>
+  </data>
+  <data name="ModelExplorerTitle" xml:space="preserve">
+    <value>RAARMAPMCWeberMDD Explorer</value>
+    <comment>Model Explorer Toolwindow title</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RAARMAPMCWeberMDDDiagram.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.RAARMAPMCWeberMDD.RAARMAPMCWeberMDDDiagram</value>
+    <comment>Description for DomainClass &apos;RAARMAPMCWeberMDDDiagram&apos;</comment>
+  </data>
+  <data name="UPM_IPS.RAARMAPMCWeberMDD.RAARMAPMCWeberMDDDiagram.DisplayName" xml:space="preserve">
+    <value>Minimal Language Diagram</value>
+    <comment>DisplayName for DomainClass &apos;RAARMAPMCWeberMDDDiagram&apos;</comment>
+  </data>
+  <data name="Modelo Entidad-RelacionToolboxTab" xml:space="preserve">
+    <value>Modelo Entidad-Relacion</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="iconoEntidadToolboxItem" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="iconoEntidadToolboxTooltip" xml:space="preserve">
+    <value>Icono Entidad</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="iconoAtribEntToolboxItem" xml:space="preserve">
+    <value>AtributoEnt</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="iconoAtribEntToolboxTooltip" xml:space="preserve">
+    <value>Icono Atrib Ent</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="iconoClavePrimToolboxItem" xml:space="preserve">
+    <value>ClavePrimaria</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="iconoClavePrimToolboxTooltip" xml:space="preserve">
+    <value>Icono Clave Prim</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="iconoRelacionToolboxItem" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="iconoRelacionToolboxTooltip" xml:space="preserve">
+    <value>Icono Relacion</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="iconoAtribRelToolboxItem" xml:space="preserve">
+    <value>AtributoRel</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="iconoAtribRelToolboxTooltip" xml:space="preserve">
+    <value>Icono Atrib Rel</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RelAtribToolboxItem" xml:space="preserve">
+    <value>RelacionAtrib</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RelAtribToolboxTooltip" xml:space="preserve">
+    <value>Rel Atrib</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RelIzqToolboxItem" xml:space="preserve">
+    <value>RelIzq</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RelIzqToolboxTooltip" xml:space="preserve">
+    <value>Rel Izq</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RelDerToolboxItem" xml:space="preserve">
+    <value>RelDer</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RelDerToolboxTooltip" xml:space="preserve">
+    <value>Rel Der</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UnresolvedToolboxItem" xml:space="preserve">
+    <value>ToolboxItem {0} was not found</value>
+    <comment>Invalid toolId</comment>
+  </data>
+  <data name="UnsupportedToolboxFormat" xml:space="preserve">
+    <value>Unsupported toolbox format: {0}</value>
+    <comment>Unsupported format Id</comment>
+  </data>
+  <data name="UnrecognizedElementType" xml:space="preserve">
+    <value>ElementType {0} is not recognized as a type of domain class which belongs to this domain model.</value>
+    <comment>Incorrect ElementType passed in to Model.CreateElement method</comment>
+  </data>
+  <data name="UnrecognizedElementLinkType" xml:space="preserve">
+    <value>ElementLinkType {0} is not recognized as a type of domain relationship which belongs to this domain model.</value>
+    <comment>Incorrect ElementLinkType passed in to Model.CreateElementLink method</comment>
+  </data>
+  <data name="AmbiguousSchema" xml:space="preserve">
+    <value>More than one schema found for target namespace &apos;{0}&apos;, use the first one at &apos;{1}&apos;.</value>
+    <comment>Serialization Warning: AmbiguousSchema</comment>
+  </data>
+  <data name="ExpectingFullFormRelationship" xml:space="preserve">
+    <value>Element &apos;{0}&apos; is treated as the target role-player of a relationship &apos;{1}&apos; instance, which should be serialized in full-form.</value>
+    <comment>Serialization Warning: ExpectingFullFormRelationship</comment>
+  </data>
+  <data name="ExpectingShortFormRelationship" xml:space="preserve">
+    <value>Instances of relationship &apos;{0}&apos; should be serialized in short-form.</value>
+    <comment>Serialization Warning: ExpectingShortFormRelationship</comment>
+  </data>
+  <data name="IgnoredPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;, ignored.</value>
+    <comment>Serialization Warning: IgnoredPropertyValue</comment>
+  </data>
+  <data name="MissingId" xml:space="preserve">
+    <value>Missing &apos;Id&apos; attribute, a new Guid &apos;{0}&apos; is auto-generated.</value>
+    <comment>Serialization Warning: MissingId</comment>
+  </data>
+  <data name="MonikerResolvedToDuplicateLink" xml:space="preserve">
+    <value>Resolving moniker &apos;{0}&apos; causes a duplicate link to be created, so the link and the moniker are ignored.</value>
+    <comment>Serialization Warning: MonikerResolvedToDuplicateLink</comment>
+  </data>
+  <data name="NoSchema" xml:space="preserve">
+    <value>Cannot find a schema that defines target namespace &apos;{0}&apos;, schema validation skipped.</value>
+    <comment>Serialization Warning: NoSchema</comment>
+  </data>
+  <data name="UnexpectedXmlElement" xml:space="preserve">
+    <value>Unexpected XML element &apos;{0}&apos;, ignored.</value>
+    <comment>Serialization Warning: UnexpectedXmlElement</comment>
+  </data>
+  <data name="AmbiguousMoniker" xml:space="preserve">
+    <value>Ambiguous moniker &apos;{0}&apos; encountered. It is used for both &apos;{1}&apos; and &apos;{2}&apos;.</value>
+    <comment>Serialization Error: AmbiguousMoniker</comment>
+  </data>
+  <data name="CannotMonikerizeElement" xml:space="preserve">
+    <value>Instances of DomainClass &apos;{0}&apos; cannot be serialized as a moniker.
+A DomainClass can be serialized as a moniker only if 
+1) it has a defined/inherited DomainProperty marked as IsMonikerKey=true, or 
+2) it is marked/inherited with SerializeId=true.</value>
+    <comment>Serialization Error: CannotMonikerizeElement</comment>
+  </data>
+  <data name="CannotOpenDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotOpenDocument</comment>
+  </data>
+  <data name="CannotSaveDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotSaveDocument</comment>
+  </data>
+  <data name="DanglingRelationship" xml:space="preserve">
+    <value>Relationship &apos;{0}&apos; instance is missing target role-player.</value>
+    <comment>Serialization Error: DanglingRelationship</comment>
+  </data>
+  <data name="InvalidPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;.</value>
+    <comment>Serialization Error: InvalidPropertyValue</comment>
+  </data>
+  <data name="MissingMoniker" xml:space="preserve">
+    <value>Missing moniker. A moniker is expected in attribute &apos;{0}&apos;.</value>
+    <comment>Serialization Error: MissingMoniker</comment>
+  </data>
+  <data name="MissingTransaction" xml:space="preserve">
+    <value>This must be called within the context of an active transaction.</value>
+    <comment>Serialization Error: MissingTransaction</comment>
+  </data>
+  <data name="UnresolvedMoniker" xml:space="preserve">
+    <value>Cannot resolve moniker &apos;{0}&apos;.</value>
+    <comment>Serialization Error: UnresolvedMoniker</comment>
+  </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>Unsupported version &apos;{0}&apos;, can only support &apos;{1}&apos;.</value>
+    <comment>Serialization Error: VersionMismatch</comment>
+  </data>
+  <data name="CannotCloseExistingDiagramDocument" xml:space="preserve">
+    <value>Diagram file &apos;{0}&apos; cannot be closed.</value>
+    <comment>User cancel closing diagram file. Hence, the DSL model file cannot be opened</comment>
+  </data>
+  <data name="BindingErrorOccurred" xml:space="preserve">
+    <value>Extensions for this designer may not be found as a MEF binding error has occurred. The error that occurred was:
+{0}</value>
+    <comment>MEF binding error occurred - exception message being logged in the error window so the user is aware.</comment>
+  </data>
+  <data name="InvalidSaveRootElementType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid root element type.</value>
+    <comment>Exception message used if an invalid root element type is passed to IDomainModelSerializer.SaveModel / SaveModelAndDiagram</comment>
+  </data>
+  <data name="InvalidSaveDiagramType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid diagram type.</value>
+    <comment>Exception message used if an invalid diagram type is passed to IDomainModelSerializer.SaveModelAndDiagram</comment>
+  </data>
+  <data name="MinimumMultiplicityMissingLink" xml:space="preserve">
+    <value>{0} {1} has no {2}.</value>
+    <comment>Multiplicity underflow validation.</comment>
+  </data>
+  <data name="SaveOperationCancelled" xml:space="preserve">
+    <value>Save operation cancelled.</value>
+    <comment>Message when save is cancelled on validation errors</comment>
+  </data>
+  <data name="SaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors, continue save?</value>
+    <comment>Message when validation errors are found on save</comment>
+  </data>
+  <data name="UnloadableSaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors. Continuing to save may cause the file to become unloadable, do you want to continue?</value>
+    <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ClavePrimShapeIconDecoratorDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\llave.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="iconoEntidadToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Entity.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="iconoAtribEntToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Attribute.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="iconoClavePrimToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Key.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="iconoRelacionToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Relation_ff.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="iconoAtribRelToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Black tag.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RelAtribToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\About.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RelIzqToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConDer.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RelDerToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConIzq.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+</root>
+
+
